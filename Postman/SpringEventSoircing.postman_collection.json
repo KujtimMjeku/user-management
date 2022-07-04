@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "101cf297-e8c8-4b46-8431-0490554f1a8d",
+		"name": "SpringEventSoircing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegisterUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\":{\r\n        \"firstname\":\"SDFA\",\r\n        \"lastname\": \"Doe\",\r\n        \"emailAddress\":\"Mike@gmail.com\",\r\n        \"account\":{\r\n            \"username\":\"dafm\",\r\n            \"password\":\" DdfasdfaAF\",\r\n            \"roles\":[\"READ_PRIVILAGE\",\"WRITE_PRIVILAGE\"]\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/registerUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"registerUser"
+					]
+				},
+				"description": "Test"
+			},
+			"response": []
+		}
+	]
+}
